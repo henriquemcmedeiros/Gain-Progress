@@ -1,0 +1,118 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: #201b2c;
+}
+
+.loginForm {
+    color: #FFFFFF;
+    width: 280px;
+    height: 380px;
+    background: rgba(0, 0, 0, 0.62);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20%;
+    text-align: center;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/originals/33/1e/31/331e31d369af02328c60b02a4532b24e.png);
+    width: 1140px;
+    height: 650px;
+}
+
+.logo {
+    width: 150px;
+    margin: 20px;
+}
+
+header {
+    display: inline;
+}
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+.rectangle-div,
+.rectangle-div1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color: #564875;
+    width: 218px;
+    height: 374px;
+}
+
+.rectangle-div1 {
+    top: 34px;
+    width: 448px;
+    height: 340px;
+}
+
+.atual-div,
+.group-div {
+    position: absolute;
+    top: 0;
+    left: 470px;
+    width: 448px;
+    height: 374px;
+    float: right;
+}
+
+.atual-div {
+    left: 38px;
+    display: inline-block;
+    width: 134px;
+    height: 34px;
+}
+
+.group-div1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 448px;
+    height: 374px;
+    float: left;
+}
+
+.group-main {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 187px;
+    font-size: 15px;
+    color: #fff;
+    font-family: Inter;
+}
+
+.logoIn {
+    width: 150px;
+    margin: 25px;
+    float: left;
+}
+
+.hello {
+    color: #FFFFFF;
+    float: right;
+    width: 150px;
+    margin: 32px;
+}
+
+.logout {
+    text-decoration: none;
+    color: #FFFFFF;
+    float: right;
+    width: 150px;
+    margin-top: 37px;
+}

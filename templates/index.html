@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <header>
+        <img class="logoIn" src="../static/images/HenriqueNoBackground.png">
+        <h2 class="hello">Hello {{ userame }}</h2>
+        <a class="logout" href="/logout"><h5>Logout</h5></a>
+    </header>
+    <main class="group-main">
+        <div class="group-div">
+            <div class="rectangle-div"></div>
+            <div class="rectangle-div1"></div>
+            <div class="anterior-div">Anterior</div>
+        </div>
+        <div class="group-div1">
+            <div class="rectangle-div"></div>
+            <div class="rectangle-div1"></div>
+            <div class="atual-div">Atual</div>
+        </div>
+    </main>
+{% endblock %}
