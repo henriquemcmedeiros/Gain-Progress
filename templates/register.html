@@ -5,6 +5,13 @@
 {% endblock %}
 
 {% block main %}
+    {% if get_flashed_messages() %}
+        <header>
+            <div class="alert alert-primary mb-0 text-center" role="alert">
+                {{ get_flashed_messages() | join(" ") }}
+            </div>
+        </header>
+    {% endif %}
     <div class="login">
         <div class="loginForm">
             <img class="logo" src="../static/images/HenriqueNoBackground.png">

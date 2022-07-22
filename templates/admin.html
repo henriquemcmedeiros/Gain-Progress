@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Admin
+{% endblock %}
+
+{% block main %}
+<a class="logout" href="/logout"><h5>Logout</h5></a>
+<div class="biggest container">
+    <div class="container">
+        <div class="section">
+            <h2>Users</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>USERNAME</th>
+                        <th>DEREGISTER</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Loop through the database entries to display them in this table -->
+                    {% for users in users %}
+                        {% if users["id"] != 5 %}
+                            <tr>
+                                <td>{{ users["id"] }}</td>
+                                <td>{{ users["username"] }}</td>
+                                <td>
+                                    <form action="/deregister" method="post">
+                                        <input name="id" type="hidden" value="{{ users['id'] }}">
+                                        <input type="submit" value="X">
+                                    </form>
+                                </td>
+                            </tr>
+                        {% endif %}
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="lastTimeUpdated">
+            <h2>Last time updated</h2>
+            <table>
+                <thead>
+                    <tr>
+                        {% for materias in materias %}
+                            <th>{{ materias }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ lastTimeUpdated[0]["lastTimeUpdated"] }}</td>
+                        <td>{{ lastTimeUpdated[1]["lastTimeUpdated"] }}</td>
+                        <td>{{ lastTimeUpdated[2]["lastTimeUpdated"] }}</td>
+                        <td>{{ lastTimeUpdated[3]["lastTimeUpdated"] }}</td>
+                        <td>{{ lastTimeUpdated[4]["lastTimeUpdated"] }}</td>
+                        <td>{{ lastTimeUpdated[5]["lastTimeUpdated"] }}</td>
+                        <td>{{ lastTimeUpdated[6]["lastTimeUpdated"] }}</td>
+                    </tr>
+                    <tr>
+                        {% for materias in materias %}
+                            <td>
+                                <form action="/lastTimeUpdated" method="post">
+                                    <input name="materias" type="hidden" value="{{ materias }}">
+                                    <input type="submit" value="Send">
+                                </form>
+                            </td>
+                        {% endfor %}
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+</div>
+{% endblock %}

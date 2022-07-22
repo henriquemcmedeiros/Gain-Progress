@@ -5,21 +5,177 @@
 {% endblock %}
 
 {% block main %}
-    <header>
-        <img class="logoIn" src="../static/images/HenriqueNoBackground.png">
-        <h2 class="hello">Hello {{ userame }}</h2>
-        <a class="logout" href="/logout"><h5>Logout</h5></a>
-    </header>
-    <main class="group-main">
-        <div class="group-div">
-            <div class="rectangle-div"></div>
-            <div class="rectangle-div1"></div>
-            <div class="anterior-div">Anterior</div>
+<header>
+  <img class="logoIn" src="../static/images/HenriqueNoBackground.png">
+  <h2 class="hello">Hello!! {{ username }}</h2>
+  <a class="logout" href="/logout"><h5>Logout</h5></a>
+<main>
+  <div class="esquerda">
+    <h2>Atual</h2>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">👾 Projeto Integrador II: jogo educacional em 2D - PI</h5>
+          <p class="card-text">Programação de um jogo 2D, com estruturas de dados sequenciais, persistência fraca de dados e princípios de modularização.</p>
+          <a href="https://equal-sturgeon-e06.notion.site/Projeto-Integrador-II-jogo-educacional-em-2D-PI-8c0d2427b02a4e608484c7f582bef404" class="btn">Leia Mais</a>
         </div>
-        <div class="group-div1">
-            <div class="rectangle-div"></div>
-            <div class="rectangle-div1"></div>
-            <div class="atual-div">Atual</div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">🗂️ Banco de Dados - BD</h5>
+          <p class="card-text">Projetar e implementar bancos de dados para diversas aplicações, com foco na linguagem SQL, padrão dos principais bancos de dados em uso no mercado.</p>
+          <a href="https://equal-sturgeon-e06.notion.site/Banco-de-Dados-46c0cb629abf4aeeb9ef9afc477b64e2" class="btn">Leia Mais</a>
         </div>
-    </main>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">📏 Geometria Analítica - GA</h5>
+          <p class="card-text">Conceitos envolvidos na prática e aplicada em sua área de atuação para estimular seu raciocínio lógico e capacidade de solucionar problemas.</p>
+          <a href="https://equal-sturgeon-e06.notion.site/Geometria-Anal-tica-158b395e86b4436ebb30c5eac2f02f3d" class="btn">Leia Mais</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">🖱️ Algoritmos e Programação II - AP</h5>
+          <p class="card-text">Programação interativa e recursiva, métodos de busca e classificação de dados, conceito e a implementação de vetores e matrizes e estruturas de dados.</p>
+          <a href="https://equal-sturgeon-e06.notion.site/Algoritmos-e-Programa-o-II-a15e30df2e3d46839720888a16dae431" class="btn">Leia Mais</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">🧮 Cálculo Diferencial e Integral I</h5>
+          <p class="card-text">Raciocínio lógico, a intuição matemática, o senso crítico e a criatividade para lidar com novos conceitos matemáticos e relacioná-los com outros</p>
+          <a href="https://equal-sturgeon-e06.notion.site/C-lculo-Diferencial-e-Integral-I-1dd8b92362874d118cd9187de8c0b6c9" class="btn">Leia Mais</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">⚖️ Ética, Cidadania e Sustentabilidade</h5>
+          <p class="card-text">Refletir sobre questões contemporâneas como globalização, responsabilidade socioambiental, desigualdades entre outros</p>
+          <a href="https://equal-sturgeon-e06.notion.site/tica-Cidadania-e-Sustentabilidade-1857c9be9f174170854957338e3a92f6" class="btn">Leia Mais</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">🖥️ Organização e Arquitetura de Computadores</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://equal-sturgeon-e06.notion.site/Organiza-o-e-Arquitetura-de-Computadores-aebfab1006b241f9918cbc9f32e78e97" class="btn">Leia Mais</a>
+        </div>
+    </div>
+    <div class="card" id="RedesSociais" style="width: 18rem;">
+      <h5>Social Media</h5>
+      <div class="mediaImg">
+        <a href="https://www.instagram.com/henrimarqs_/"><img class="ContatoImg" src="../static/images/Instagram_icon.png"></a>
+      </div>
+      <div class="mediaImg">
+        <a href="https://github.com/henriquemcmedeiros"><img class="ContatoImg" src="../static/images/github.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="direita">
+    <h2>Anterior</h2>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">♾️ Pré-cálculo - PC</h5>
+        <p class="card-text">Introdução à teoria de conjuntos, funções elementares e gráficos de funções, para solucionar problemas de programação.</p>
+        <a href="https://equal-sturgeon-e06.notion.site/Pr-c-lculo-PC-b35924c8565640d9a3ea5dbb92352afa" class="btn">Leia Mais</a>
+      </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">🗣️ Comunicação e redação técnica - CRT</h5>
+        <p class="card-text">Organização de pensamentos para melhorar sua linguagem na elaboração de resumos, projetos e relatórios técnicos.</p>
+        <a href="https://equal-sturgeon-e06.notion.site/Comunica-o-e-reda-o-t-cnica-CRT-bba6ae44226341cca540f548596ef51b" class="btn">Leia Mais</a>
+      </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">📑 Projeto integrador: Escrita científica e LaTeX - PI</h5>
+        <p class="card-text">Projeto baseado em diagramas ou linguagem de alto nível para a solução de problemas.</p>
+        <a href="https://equal-sturgeon-e06.notion.site/Projeto-integrador-Escrita-cient-fica-e-LaTeX-PI-f79cf24bb0524ce7ac1959f5cdbb5c67" class="btn">Leia Mais</a>
+      </div>
+  </div>
+  <spam id="more">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">🖱️ Algoritmos e Programação I - AP</h5>
+          <p class="card-text">Principais linguagens e seus processos de programação para resolver problemas e desenvolver projetos de algoritmos.</p>
+          <a href="https://equal-sturgeon-e06.notion.site/Algoritmos-e-Programa-o-AP-997efabf4a15497bb2ca144332f17047" class="btn">Leia Mais</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">🌐 Programação Web - PW</h5>
+          <p class="card-text">Criação de páginas web com design responsivo para sites de diversas funcionalidades, como HTML, CSS e JavaScript.</p>
+          <a href="https://equal-sturgeon-e06.notion.site/Programa-o-Web-PW-0efa9f2daaec4137a150a24f5f58c984" class="btn">Leia Mais</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">💻 Introdução à computação - IC</h5>
+          <p class="card-text">Sistemas de numeração, álgebra booleanas, eletrônica digital, máquinas combinacionais, aritmética, conversão de bases e noções de lógica digital.</p>
+          <a href="https://equal-sturgeon-e06.notion.site/Introdu-o-computa-o-IC-ccb66167ae0c4c45802c252b6c773dac" class="btn">Leia Mais</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">🔎 Pesquisa, tecnologia e sociedade - PTS</h5>
+          <p class="card-text">Relação entre pesquisa, tecnologia e desenvolvimento social, aprendendo os conceitos de pesquisa, metodologias e procedimentos científicos.</p>
+          <a href="https://equal-sturgeon-e06.notion.site/Pesquisa-tecnologia-e-sociedade-PTS-edb64ee296c24e00bd0a94e32793fd04" class="btn">Leia Mais</a>
+        </div>
+    </div>
+  </spam>
+  <div onclick="SeeMore()">
+    <img id="seeMore" class="logo" src="../static/images/seeMore.svg">
+  </div>
+</div>
+  </div>
+  </div>
+  <div class="esquerda" id="atualizacoes">
+    <h2>Atualizações</h2>
+    <div class="card" style="width: 18rem; height: 10rem;">
+      <div class="card-body">
+        <h5 class="card-title">👾 Projeto Integrador II: jogo educacional em 2D - PI</h5>
+        <p class="card-text">{{ lastTimeUpdated[0]["lastTimeUpdated"] }}</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; height: 10rem;">
+      <div class="card-body">
+        <h5 class="card-title">🗂️ Banco de Dados - BD</h5>
+        <p class="card-text">{{ lastTimeUpdated[1]["lastTimeUpdated"] }}</p>
+      </div>
+    </div>
+    <div class="card" style="width: 11.5rem; height: 10rem;">
+      <div class="card-body">
+        <h5 class="card-title">📏 Geometria Analítica - GA</h5>
+        <p class="card-text">{{ lastTimeUpdated[2]["lastTimeUpdated"] }}</p>
+      </div>
+    </div>
+    <div class="card" style="width: 11.5rem; height: 10rem;">
+      <div class="card-body">
+        <h5 class="card-title">🖱️ Algoritmos e Programação II - AP</h5>
+        <p class="card-text">{{ lastTimeUpdated[3]["lastTimeUpdated"] }}</p>
+      </div>
+    </div>
+    <div class="card" style="width: 11.5rem; height: 10rem;">
+      <div class="card-body">
+        <h5 class="card-title">🧮 Cálculo Diferencial e Integral I</h5>
+        <p class="card-text">{{ lastTimeUpdated[4]["lastTimeUpdated"] }}</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; height: 10rem;">
+      <div class="card-body">
+        <h5 class="card-title">⚖️ Ética, Cidadania e Sustentabilidade</h5>
+        <p class="card-text">{{ lastTimeUpdated[5]["lastTimeUpdated"] }}</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; height: 10rem;">
+      <div class="card-body">
+        <h5 class="card-title">🖥️ Organização e Arquitetura de Computadores</h5>
+        <p class="card-text">{{ lastTimeUpdated[6]["lastTimeUpdated"] }}</p>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</main>
 {% endblock %}
